@@ -8,7 +8,7 @@
 
 <?php
 
-// Turn on error reporting - valid for all pages
+// Turn on error reporting
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
@@ -19,7 +19,7 @@ require_once('vendor/autoload.php');
 $f3 = Base::instance();
 
 
-// Define a default route (define what user sees) ("home page" for hello project)
+// Define a default route (define what user sees) 
 $f3->route('GET /', function (){
 //    echo '<h1>Pet Home</h1>';
     $view = new Template();
